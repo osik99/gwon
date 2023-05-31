@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script lang="java">
+        $(function(){
+          /*   var n = $(".list li").eq(0).text();
+
+            var n = $(".list li").eq(0).text("원");
+            var n = $(".list li").eq(1).text("투");
+            console.log("n:",n);
+
+            var a= $(".list li").eq(0).attr("data")
+            console.log("a:",a);
+
+            var c= $(".list li").eq(0).attr("class")
+            console.log("c:",c);
+
+
+            var a= $
+ */
+
+            $(".list li").each(function(i){
+                console.log("i:",i);
+                console.log("this:",this);
+                console.log("this text:",$(this).text());
+                console.log("this data:",$(this).attr("data"));
+                
+            })
+
+            $(".list li").animate;
+
+        })//스크립트
+    </script>
+    <style type="text/css">
+        .list {
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .list li {
+            height: 50px;
+            left: 50px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>each event</h1>
+        <ul class="list">
+            <li data-="1" class="f1">one</li>
+            <li data-="2">two</li>
+            <li data-="3">tree</li>
+        </ul><!-- list -->
+    </div>
+</body>
+
+</html>
